@@ -17,13 +17,11 @@ LOGS_DIR        = os.path.join(os.getcwd(), "logs")
 LOG_FILE        = os.path.join(LOGS_DIR, f"update_i7_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log")
 
 # If repository list is not empty — scan only these repositories. Otherwise, scan the entire organization.
-# REPOSITORY_LIST = [
-#                     # "ci-demo",
-#                     # "ci-demo",
-#                     # "ci-demo",
-#                     ]
-
-REPOSITORY_LIST = []
+REPOSITORY_LIST = [
+                    # "ci-demo",
+                    # "ci-demo",
+                    # "ci-demo",
+                    ]
 
 
 # ─── Initialization ───────────────────────────────────────────────────────────
