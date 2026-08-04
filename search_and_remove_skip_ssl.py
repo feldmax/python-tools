@@ -1,11 +1,11 @@
 import os
 import re
+import requests
 import sys
 import ssl
 import urllib3
 from datetime import datetime
 from github import Github, InputGitTreeElement, GithubException
-import requests
 from requests.adapters import HTTPAdapter
 
 # ─── Configuration ────────────────────────────────────────────────────────────
@@ -32,8 +32,8 @@ LOGS_DIR        = os.path.join(os.getcwd(), "logs")
 
 # If repository list is not empty — scan only these repositories. Otherwise, scan the entire organization.
 REPOSITORY_LIST = [
-    # "ci-demo",
-    # "hello-dummy-devops",
+    "ci-demo",
+    "hello-dummy-devops",
 ]
 
 # ─── Parse arguments ──────────────────────────────────────────────────────────
